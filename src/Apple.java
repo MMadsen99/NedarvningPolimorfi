@@ -7,12 +7,15 @@ import java.util.Date;
  * 09/11/2020
  */
 
-public class Apple extends Frugt {
+public class Apple extends Frugt implements Bearbejde {
 
     String sort = "Golden Delicious";
     String type = "spiseæble";
     boolean moden = false;
 
 
-
+    @Override
+    public void Bearbejde() {
+        System.out.println("Der lavese æblemos eller æblejuice");
+    }
 }

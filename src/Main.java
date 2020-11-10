@@ -23,6 +23,33 @@ public class Main {
         p.holdbarhed = new Date(1608768000);
         p.freeze();
 
+        Pear pear = new Pear();
+
+        pear.moden = true;
+        pear.stykpris = 3;
+        p.holdbarhed = new Date(1608768000);
+        pear.kanSælges = true;
+        pear.coolDown();
+        pear.konserver();
+
+        Rose r = new Rose();
+
+        r.stykpris = 10;
+        r.color = "Red";
+        r.inABundle = false;
+        r.kanSælges = true;
+        r.inWater();
+        r.smidUd();
+
+
+        Gulerod g = new Gulerod();
+
+        g.stykpris = 0.3;
+        g.holdbarhed = new Date(1608768000);
+        g.kanSælges = true;
+        g.smidUd();
+
+
     }
 
 }

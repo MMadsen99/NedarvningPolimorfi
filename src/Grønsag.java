@@ -6,7 +6,9 @@
  */
 
 public class Grønsag extends Varer {
+
     void freeze() {
         System.out.println("Fryses ned.");
     }
+
 }
