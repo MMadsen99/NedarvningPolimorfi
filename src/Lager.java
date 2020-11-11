@@ -5,18 +5,21 @@ public class Lager {
     public static void main(String[] args) {
         Lager lager = new Lager();
         lager.antalVare();
+        lager.vareLager.size();
 
     }
 
-     ArrayList<Vare> vareLager = new ArrayList<>();
+     ArrayList<Vare> vareLager = new ArrayList<Vare>();
 
     public void fyldOp(){
 
         Rose rose = new Rose();
         vareLager.add(rose);
 
+        Apple apple = new Apple();
+
         for (int i = 0; i < 10; i++) { // hvis jeg ville have flere æbler
-            Apple apple = new Apple();
+            System.out.println("Æble tilføjet");
             vareLager.add(apple);
         }
 
