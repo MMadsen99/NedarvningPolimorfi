@@ -7,7 +7,7 @@ import java.util.Date;
  * 09/11/2020
  */
 
-public class Varer {
+public class Vare {
 
     double stykpris;
     Date holdbarhed;

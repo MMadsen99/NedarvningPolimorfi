@@ -1,4 +1,4 @@
-public class Blomst extends Varer {
+public class Blomst extends Vare {
 
     boolean inABundle = true;
 

@@ -1,4 +1,4 @@
-public class Gulerod extends Grønsag implements Bearbejde {
+public class Carrot extends Grønsag implements Bearbejde {
 
     String color = "Orange";
 

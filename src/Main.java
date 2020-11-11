@@ -42,7 +42,7 @@ public class Main {
         r.smidUd();
 
 
-        Gulerod g = new Gulerod();
+        Carrot g = new Carrot();
 
         g.stykpris = 0.3;
         g.holdbarhed = new Date(1608768000);

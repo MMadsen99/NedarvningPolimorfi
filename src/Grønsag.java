@@ -5,7 +5,7 @@
  * 09/11/2020
  */
 
-public class Grønsag extends Varer {
+public class Grønsag extends Vare {
 
     void freeze() {
         System.out.println("Fryses ned.");

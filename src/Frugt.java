@@ -5,7 +5,7 @@
  * 09/11/2020
  */
 
-public class Frugt extends Varer {
+public class Frugt extends Vare {
 
     void coolDown() {
         System.out.println("Æblerne køles ned.");
