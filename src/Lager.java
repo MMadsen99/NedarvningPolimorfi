@@ -4,34 +4,37 @@ public class Lager {
 
     public static void main(String[] args) {
         Lager lager = new Lager();
+        fyldOp();
         lager.antalVare();
-        lager.vareLager.size();
+
 
     }
 
-     ArrayList<Vare> vareLager = new ArrayList<Vare>();
+     static ArrayList<Vare> vareLager = new ArrayList<Vare>();
 
-    public void fyldOp(){
+    public static void fyldOp(){
 
         Rose rose = new Rose();
         vareLager.add(rose);
 
-        Apple apple = new Apple();
+        Carrot carrot = new Carrot();
+        vareLager.add(carrot);
 
-        for (int i = 0; i < 10; i++) { // hvis jeg ville have flere æbler
-            System.out.println("Æble tilføjet");
+        //ligger 10 æbler ind på lageret
+        Apple apple = new Apple();
+        for (int i = 0; i < 10; i++) {
+            int plads = i + 1;
+            System.out.println(" et er æble lagt ind på plads: " +  plads);
             vareLager.add(apple);
         }
 
 
 
-        Carrot carrot = new Carrot(); // refactor til carrot
-        vareLager.add(carrot);
+        // 2 måder og tilføje en ting til ageret
 
         Pear pear = new Pear(); // den ene måde
         vareLager.add(pear);
 
-       // Peas peas = new Peas();
         vareLager.add(new Peas()); // den anden måde
 
 
@@ -40,6 +43,8 @@ public class Lager {
     }
     public  int antalVare() {
 
+
+        System.out.println(vareLager.size());
     return vareLager.size();
 
 

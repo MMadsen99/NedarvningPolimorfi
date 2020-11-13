@@ -9,12 +9,12 @@ import java.util.Date;
 
 public class Vare {
 
-    double stykpris;
-    Date holdbarhed;
-    boolean kanSælges = true;
+    double stykpris; // price of one
+    Date holdbarhed; // date of expire
+    boolean kanSælges = true; // sellable (?)
 
     void smidUd() {
         kanSælges = false;
-    }
+    } //Smid ud = throw out
 
 }
